@@ -28,10 +28,12 @@ const HomeContainer = () => {
 
     return(
         <div className="homeContainer">
-            <Form className="form" addWeight={addWeight}/>
-            <ul>
+            <Form  addWeight={addWeight}/>
+            <div className="weight">
+            <ul className="form">
                 {displayWeight}
             </ul>
+            </div>
         </div>
     )
 }
