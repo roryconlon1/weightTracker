@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Form from "../components/Form";
 import { getWeight } from "../service/dbService";
 import './HomeContainer.css';
+import Graph from "../components/Graph";
 
 const HomeContainer = () => {
 
@@ -30,9 +31,7 @@ const HomeContainer = () => {
         <div className="homeContainer">
             <Form  addWeight={addWeight}/>
             <div className="weight">
-            <ul className="form">
-                {displayWeight}
-            </ul>
+            <Graph weights={weights}/>
             </div>
         </div>
     )

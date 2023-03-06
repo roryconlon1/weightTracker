@@ -25,20 +25,16 @@ const Form = ({ addWeight }) => {
 
     return (
         <div>
-            <form className="form" onSubmit={handleSubmit}>
-                <ul>
-                    <li>
-                        Weight in lbs &nbsp;
-                        <input type="number" onChange={handleChange} id="weight"></input>
-                    </li>
-                    <li>
-                        Date &nbsp;
-                        <input type="date" id="date" onChange={handleChange}></input>
-                    </li>
-                    <li>
-                        <button >Save</button>
-                    </li>
-                </ul>
+            <form className="form" class="ui form" onSubmit={handleSubmit}>
+                <div class="field">
+                    <label>Weight in lbs</label>
+                    <input type="number" onChange={handleChange} id="weight"></input>
+                </div>
+                <div class="field">
+                    <label>Date</label>
+                    <input type="date" id="date" onChange={handleChange}></input>
+                </div>
+                <button class="ui button">Save</button>
             </form>
         </div>
     )
