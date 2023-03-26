@@ -45,7 +45,8 @@ const Tdee = ({ weights }) => {
 
     return (
         <div className="calories">
-                 <ul className="calorieIntakeList">
+            <ul className="calorieIntakeList">
+                <li className="listItem">Maintenance Calories: <b>{value.toFixed(0)}</b></li>
                 <li className="listItem">Mild Weight Loss Calories: <b>{mildWeight}</b></li>
                 <li className="listItem">Moderate Weight Loss Calories: <b>{moderateWeight}</b></li>
                 <li className="listItem">Extreme Weight Loss Calories: <b>{extremeWeight}</b></li>
