@@ -1,0 +1,19 @@
+.calories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 650px;
+}
+
+.calorieIntakeList {
+    list-style: none;
+}
+
+.listItem {
+    padding: 1em;
+}
+
+.radioButtons {
+    padding-top: 1.5em;
+}

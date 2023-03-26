@@ -8,7 +8,6 @@ const Form = ({ addWeight }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log("hello");
         formData["weight"] = formData.weight;
         formData["date"] = formData.date;
         postWeight(formData)
@@ -28,7 +27,7 @@ const Form = ({ addWeight }) => {
             <form className="form" class="ui form" onSubmit={handleSubmit}>
                 <div class="field">
                     <label>Weight in lbs</label>
-                    <input type="number" onChange={handleChange} id="weight"></input>
+                    <input type="number" step="0.1" onChange={handleChange} id="weight"></input>
                 </div>
                 <div class="field">
                     <label>Date</label>

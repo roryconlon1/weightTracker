@@ -3,6 +3,7 @@ import Form from "../components/Form";
 import { getWeight } from "../service/dbService";
 import './HomeContainer.css';
 import Graph from "../components/Graph";
+import Tdee from "../components/Tdee";
 
 const HomeContainer = () => {
 
@@ -29,7 +30,10 @@ const HomeContainer = () => {
 
     return(
         <div className="homeContainer">
-            <Form  addWeight={addWeight}/>
+            <div className="formAndRadio">
+            <Form className="form" addWeight={addWeight}/>
+            <Tdee weights={weights}/>
+            </div>
             <div className="weight">
             <Graph weights={weights}/>
             </div>

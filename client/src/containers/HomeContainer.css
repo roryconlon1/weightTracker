@@ -2,13 +2,26 @@
     display: flex;
     justify-content: center;
     padding-top: 2em;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    /* background-color: #a28089; */
-
 }
 
 .weight {
     padding-top: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formAndRadio {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+}
+
+.form {
+    padding-top: 1.5em;
 }
 
