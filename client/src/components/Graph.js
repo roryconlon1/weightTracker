@@ -13,8 +13,8 @@ const Graph = ({ weights }) => {
     return (
         <div className="graphBox">
             <LineChart width={600} height={400} data={weights}>
-                <CartesianGrid strokeDasharray="3 3" fill="white"/>
-                <XAxis dataKey="date" tick={{ fontSize: 14 }} tickFormatter={formatDate}/>
+                <CartesianGrid strokeDasharray="2 2" fill="white"/>
+                <XAxis dataKey="date" tick={{ fontSize: 14 }} tickFormatter={formatDate} textAnchor="end" sclaeToFit="true" verticalAnchor="start" interval={0} angle="-45" height={100}/>
                 <YAxis dataKey="weight" tick={{ fontSize: 14 }} tickCount={10} domain={[150, 'auto']} />
                 <Tooltip  labelStyle={{ fontSize: 16 }} itemStyle={{ fontSize: 14 }} />
                 <Legend formatter={(value, entry) => `Weight in Lbs`} />
